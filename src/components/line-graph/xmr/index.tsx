@@ -25,13 +25,13 @@ export class MoneroGraph extends React.Component<Props, State> {
 
   public fetchData = () => {
     this.setState({ fetchingData: true });
-    fetchAsync('https://proxy.mycryptoapi.com/mv')
+    fetchAsync('https://tokl.io/api/get-live-toklio-price')
       .then((json: any) => {
         if (json) {
           this.setState({ fetchingData: false });
           this.setState({ data: this.formatRawData(json.Data) });
         } else {
-          throw new Error('Failed to fetch XMR data');
+          throw new Error('Failed to fetch TOKL data');
         }
       })
       .catch(error => {
@@ -60,7 +60,7 @@ export class MoneroGraph extends React.Component<Props, State> {
     return !fetchingData && !!data[0] ? (
       <div className="xmr-price">
         <div className="xmr-price-header">
-          <p className="title">Monero Price</p>
+          <p className="title">Toklio Price</p>
           <div className="flex-spacer" />
           <p className="time">7d</p>
         </div>
@@ -111,7 +111,7 @@ export class MoneroGraph extends React.Component<Props, State> {
       // Skeleton graph
       <div className="xmr-price">
         <div className="xmr-price-header">
-          <p className="title">Monero Price</p>
+          <p className="title">Toklio Price</p>
           <div className="flex-spacer" />
           <p className="time">7d</p>
         </div>
