@@ -8,7 +8,7 @@ import { Select } from 'components/node-dropdown/components/select-node';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 const Logo = () => (
-  <img src="../../img/logo_128.png"/>
+  <img src="logo_128.png"/>
 );
 
 export class Nav extends React.Component {
