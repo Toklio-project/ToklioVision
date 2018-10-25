@@ -11,7 +11,7 @@ export interface NodeState {
 
 export const INITIAL_STATE: NodeState = {
   selectedNode: defaultNode,
-  nodes: [{ name: defaultNode, url: 'http://explorer.tokl.io' }]
+  nodes: [{ name: defaultNode, url: 'http://explore.tokl.io' }]
 };
 
 function addNode(state: NodeState, action: AddNodeAction): NodeState {
