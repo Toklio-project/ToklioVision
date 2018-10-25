@@ -35,7 +35,7 @@ export class Home extends React.Component {
       <>
         <section className="card New-User-CTA">
           <div className="New-User-CTA-text-wrapper">
-            <h2 className="New-User-CTA-title">Welcome to Toklio Blockchain Explorer!</h2>
+            <h2 className="New-User-CTA-title">Toklio Blocks Explorer</h2>
             <p className="New-User-CTA-text">
               This open source web tool that allows you to view information about blocks, addresses, and transactions on the Toklio blockchain.
             </p>
